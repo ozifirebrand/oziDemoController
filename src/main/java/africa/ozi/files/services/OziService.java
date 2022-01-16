@@ -6,5 +6,5 @@ import africa.ozi.files.dtos.responses.OziResponse;
 
 public interface OziService {
     OziResponse createOzi (OziRequest oziRequest);
-    Ozi findOzi (String id);
+    Ozi findOziById(String id);
 }

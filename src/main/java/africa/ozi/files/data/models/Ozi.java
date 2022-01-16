@@ -2,9 +2,9 @@ package africa.ozi.files.data.models;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
-import org.springframework.stereotype.Component;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Component
+@Document
 @Data
 
 public class Ozi {

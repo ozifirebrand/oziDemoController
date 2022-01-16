@@ -7,25 +7,24 @@ import africa.ozi.files.services.OziServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-
+@RequestMapping("ozi/v1")
 public class OziController {
-    private final OziService oziService = new OziServiceImpl();
+
+    @Autowired
+    private OziService oziService;
 
     @PostMapping("ozi")
-    public ResponseEntity<?> createOzi(OziRequest request){
+    public ResponseEntity<?> createOzi(@RequestBody OziRequest request){
 
-        OziResponse response = oziService.createOzi(request);
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
+        return new ResponseEntity<>(oziService.createOzi(request), HttpStatus.CREATED);
     }
 
     @GetMapping("all_ozi")
-    public ResponseEntity<?> findAnOzi(String id){
+    public ResponseEntity<?> findAnOzi(@RequestParam("id") String id){
 
-        return new ResponseEntity<>(oziService.findOzi(id), HttpStatus.OK);
+        return new ResponseEntity<>(oziService.findOziById(id), HttpStatus.OK);
     }
 }

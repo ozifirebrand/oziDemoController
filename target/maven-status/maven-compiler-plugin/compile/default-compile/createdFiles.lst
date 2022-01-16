@@ -1,0 +1,9 @@
+africa\ozi\files\data\repositories\OziRepository.class
+africa\ozi\files\OziMain.class
+africa\ozi\files\dtos\requests\OziRequest.class
+africa\ozi\files\modelMapper\ModelMapper.class
+africa\ozi\files\data\models\Ozi.class
+africa\ozi\files\services\OziServiceImpl.class
+africa\ozi\files\services\OziService.class
+africa\ozi\files\dtos\responses\OziResponse.class
+africa\ozi\files\controllers\OziController.class
