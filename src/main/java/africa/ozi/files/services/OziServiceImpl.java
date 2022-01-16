@@ -7,6 +7,7 @@ import africa.ozi.files.dtos.responses.OziResponse;
 import africa.ozi.files.modelMapper.ModelMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
