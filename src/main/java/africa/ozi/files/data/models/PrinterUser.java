@@ -10,9 +10,5 @@ public class Ozi {
     private String id;
     private String firstName;
     private String lastName;
-    private int age;
-    private int height;
-    private int weight;
-    private String complexion;
-    private String gender;
+    private String password;
 }
