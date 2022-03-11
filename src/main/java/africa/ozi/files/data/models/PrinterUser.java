@@ -4,4 +4,7 @@ import lombok.Data;
 
 @Data
 public class PrinterUser {
+    String firstName;
+    String password;
+    String username;
 }
