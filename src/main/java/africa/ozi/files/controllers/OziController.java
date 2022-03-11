@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("ozi/v1")
 public class OziController {
     @GetMapping("/hello")
-    public ResponseEntity<?> hello(String name){
-        return ResponseEntity.ok().body("Hello" +name);
+    public String hello(){
+        return "Hello";
     }
 }
