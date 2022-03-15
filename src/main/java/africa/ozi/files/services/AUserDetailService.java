@@ -24,10 +24,4 @@ public class AUserDetailService implements UserDetailsService {
 
         return new User(printerUser.getUsername(), printerUser.getPassword(), new ArrayList<>());
     }
-
-    public String createToken(Map<String, Object> claims, String subject){
-
-
-        return subject;
-    }
 }
