@@ -1,12 +1,18 @@
 package africa.ozi.files.data.models;
 
 import lombok.Data;
-import org.springframework.stereotype.Component;
 
-@Component
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 @Data
+
 public class PrinterUser {
-    String firstName;
-    String password;
-    String username;
+    @Id
+    private Long id;
+
+    private String firstName;
+    private String password;
+    private String username;
 }
