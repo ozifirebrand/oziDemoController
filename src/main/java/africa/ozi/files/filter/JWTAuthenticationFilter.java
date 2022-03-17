@@ -56,12 +56,4 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .sign(Algorithm.HMAC256("beingsweetandwritingcode@395".getBytes()));
         response.addHeader("Authorization", jwtToken);
     }
-
-    public void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
-        throws IOException, ServletException {
-        String header = request.getHeader("Authentication");
-        if ( header == null || !header.startsWith("Bearer") ) chain.doFilter(request, response);
-        else SecurityContextHolder.getContext().setAuthentication(new UsernamePasswordAuthenticationToken(JWT.require(Algorithm.HMAC256("beingsweetandwritingcode@395"))
-                .build().verify(header.replace("Bearer", "")).getSubject(), null, new ArrayList<>()));
-    }
 }
