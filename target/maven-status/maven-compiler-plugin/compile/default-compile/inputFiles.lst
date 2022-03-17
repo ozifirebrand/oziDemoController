@@ -1,9 +1,8 @@
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\services\OziService.java
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\data\models\Ozi.java
 C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\controllers\OziController.java
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\dtos\requests\OziRequest.java
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\dtos\responses\OziResponse.java
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\modelMapper\ModelMapper.java
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\services\OziServiceImpl.java
-C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\data\repositories\OziRepository.java
+C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\security\facebook\FacebookSignInAdapter.java
+C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\security\CustomWebConfigurerAdapter.java
+C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\services\AUserDetailService.java
+C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\data\models\PrinterUser.java
+C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\security\facebook\FacebookConnectionSignup.java
+C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\data\repositories\UserRepository.java
 C:\Users\USER\IdeaProjects\oziSecondController\src\main\java\africa\ozi\files\OziMain.java
